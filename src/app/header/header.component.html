@@ -1,0 +1,11 @@
+<div class="header-container ">
+  <div class="route">
+    <a routerLink="/products" class="route-link">NGRX Shopping Cart</a>
+  </div>
+  <div class="space"></div>
+  <div class="cart-icon">
+    <a routerLink="/cart"><img src="../../assets/cart.png" ></a>
+  </div>
+  <div class="counter">Quantity: {{ countProducts$ | async }}</div>
+  <div class="total-price">Total Price: {{ totalPrice$ | async | number : '1.2-2'}} dkk</div>
+</div>
